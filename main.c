@@ -10,6 +10,8 @@ int main(void) {
 
    //In tên khách hàng ra màn hình
 
+    // Kiểm tra điều kiện trong chuỗi có chứa số hay không
+
    
 
 
