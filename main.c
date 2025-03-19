@@ -12,27 +12,16 @@ int main(void) {
    //Khai báo biến và kiểu dữ liệu để lưu tên khách hàng
     char name[100]= "aabbc";
     printf("Check: %d\n", checkDigitInStr(name));
-    bool isDigitInStr;
     do
     {
-        isDigitInStr = 0;
         nhapTenKH(name);
-       
-        name[strlen(name)] = '\0';
-        printf("Do dai: %d\n", strlen(name));        
+        //printf("Do dai: %d\n", strlen(name));        
         
-    } while (checkDigitInStr(name) == 1);
-    
-        
-        
-    // Kiểm tra điều kiện trong chuỗi có chứa số hay không
-    //Sử dụng các hàm trong thư viện ctype.h
-
-
-    printf("%s", name);
+    } while (checkDigitInStr(name) == 1);     
+    printf("Ten KH duoc nhap vao: %s\n", name);
     return 0;
 }
-
+//Hàm nhập tên khách hàng
 void nhapTenKH(char name[100]){
     printf("Nhap ten khach hang: ");
     //scanf("s", name);
@@ -42,6 +31,8 @@ void nhapTenKH(char name[100]){
     printf("%s\n",name);
 }
 
+// Kiểm tra điều kiện trong chuỗi có chứa số hay không
+//Sử dụng các hàm trong thư viện ctype.h
 bool checkDigitInStr(char name[100]){
 
     for (unsigned int i = 0; i < strlen(name); i++)
