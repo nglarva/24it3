@@ -3,13 +3,15 @@
 #include <stdbool.h>
 #include <ctype.h>
 void nhapTenKH(char name[100]);
+bool checkDigitInStr(char name[100]);
 
 int main(void) {
     /*
     Yêu cầu 1: Viết hàm để kiểm tra xem tên khách hàng có chứa ký tự số không. Nếu có, yêu cầu khách hàng nhập lại tên.
     */
    //Khai báo biến và kiểu dữ liệu để lưu tên khách hàng
-    char name[100]= "aab4c";
+    char name[100]= "aabbc";
+    printf("Check: %d\n", checkDigitInStr(name));
     bool isDigitInStr;
     do
     {
@@ -17,19 +19,9 @@ int main(void) {
         nhapTenKH(name);
        
         name[strlen(name)] = '\0';
-        printf("Do dai: %d\n", strlen(name));
-        for (unsigned int i = 0; i < strlen(name); i++)
-        {
-           if (isdigit(name[i]))
-           {
-                printf ("co so trong ham. Yeu cau nhap lai \n");
-                isDigitInStr = true;
-                break;
-          }
-           
-        }
-        printf("%d\n", isDigitInStr);
-    } while (isDigitInStr == 1);
+        printf("Do dai: %d\n", strlen(name));        
+        
+    } while (checkDigitInStr(name) == 1);
     
         
         
@@ -48,4 +40,18 @@ void nhapTenKH(char name[100]){
 
     name[strlen(name)] = '\0';
     printf("%s\n",name);
+}
+
+bool checkDigitInStr(char name[100]){
+
+    for (unsigned int i = 0; i < strlen(name); i++)
+        {
+           if (isdigit(name[i]))
+           {
+                printf ("co so trong ham. Yeu cau nhap lai \n");
+                return true;
+          }
+           
+        }
+    return false;
 }
