@@ -6,7 +6,9 @@
 •	Sử dụng mảng để lưu nhiều vé và lặp qua chúng để hiển thị thông tin vé
 
 Yêu cầu 1: Viết hàm để kiểm tra xem tên khách hàng có chứa ký tự số không. Nếu có, yêu cầu khách hàng nhập lại tên.
+
 Yêu cầu 2: Viết một hàm để kiểm tra xem ngày chiếu có hợp lệ không (định dạng ngày tháng năm đúng: dd/mm/yyyy).
+
 Yêu cầu 3: Sử dụng vòng lặp while để nhập tên khách hàng cho đến khi tên hợp lệ (tên không quá ngắn và không chứa ký tự số).
 Yêu cầu 4: Hiển thị thông tin vé sau khi nhập tất cả các thông tin khách hàng và vé, bao gồm tên khách hàng, tiêu đề phim, ngày chiếu, và mã vé.
 Yêu cầu 5: Tạo một mảng để lưu trữ danh sách các tên khách hàng và hiển thị tất cả các tên khách hàng đã nhập sau khi kết thúc nhập liệu.
