@@ -9,6 +9,7 @@ int main(void) {
    //Khai báo biến và kiểu dữ liệu để lưu tên khách hàng
     char name[100]="abc4de";
     // Kiểm tra điều kiện trong chuỗi có chứa số hay không
+    //Sử dụng các hàm trong thư viện ctype.h
 
     
     printf("%s", name);
