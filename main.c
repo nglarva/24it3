@@ -34,6 +34,7 @@ int main(void) {
         
         
     // Kiểm tra điều kiện trong chuỗi có chứa số hay không
+    //Sử dụng các hàm trong thư viện ctype.h
 
 
     printf("%s", name);
