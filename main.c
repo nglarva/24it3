@@ -1,8 +1,7 @@
 #include "functions.h"
 #define NOW 2025
 //function prototype
-bool isLeapYear(int year);
-bool checkMonth(int month);
+
 
 int month31[7] = {1,3,5,7,8,10,12};
 int month30[4] = {4,6,9,11};
@@ -75,18 +74,3 @@ int main(void)
     
 }
 
-bool isLeapYear(int year){
-    return year % 4 == 0 ? 1 : 0;
-}
-bool checkMonth(int month){
-    for(int i=0;i< sizeof(month30)/sizeof(month30[0]);i++){
-        if(month = month30[i]){
-            return -1;
-        }
-    }
-    if(month == 2){
-        return 0;
-    }
-    return 1;
-
-}

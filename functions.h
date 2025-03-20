@@ -4,3 +4,5 @@
 #include <ctype.h>
 void nhapTenKH(char name[100]);
 bool checkDigitInStr(char name[100]);
+bool isLeapYear(int year);
+bool checkMonth(int month);

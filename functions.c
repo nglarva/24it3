@@ -25,3 +25,18 @@ bool checkDigitInStr(char name[100]){
         }
     return false;
 }
+bool isLeapYear(int year){
+    return year % 4 == 0 ? 1 : 0;
+}
+bool checkMonth(int month){
+    for(int i=0;i< sizeof(month30)/sizeof(month30[0]);i++){
+        if(month = month30[i]){
+            return -1;
+        }
+    }
+    if(month == 2){
+        return 0;
+    }
+    return 1;
+
+}
